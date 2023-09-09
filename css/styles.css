@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Pacifico&family=Righteous&family=Titillium+Web:wght@300&display=swap');
+
+/*HEADER*/
+*{
+  font-family: "Titillium Web";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inicio{
+  background-color: #a22f31;
+  color: #fff;
+  padding: 20px 20px 15px 20px;
+  border-bottom: 4px solid #2b2b4b; 
+  border-radius: 0; 
+}
+
+#nav-bar {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  position: relative;
+  padding: 12px 20px;
+  justify-content: center; 
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu li a:hover{
+  font-size: 23px;
+  color: black;
+  font-weight: 550;
+}
+
+.logo{
+  width: 80px;
+}
+
+/*MAIN INICIO*/
+
+.info{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/foto-background.jpeg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.info .contenido-banner{
+  padding: 20px;
+  background-color: #1e2326;
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.info .contenido-banner img{
+  margin-top: 40px;
+  border: 10px solid #2b2b4b;
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.info .contenido-banner h1{
+  margin-top: 30px;
+  font-size: 42px;
+  font-family: 'Righteous', sans-serif;
+}
+
+.inicio .contenido-banner h2{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+
+/*INTEGRANTES*/
+
+.integrantes{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondo-integrantes");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenedor{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  padding: 30px;
+  margin: 20px;
+}
+
+.container-bt{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.foto-integrante{
+  width: 250px;
+  border-radius: 80px;
+  border: 6px solid #090935;
+}
+
+.boton{
+border: 1px solid #4f5d98; 
+padding: 20px; 
+background-color: #4f5d98; 
+color: #ffffff;
+text-align: center;
+text-decoration: none; 
+text-transform: uppercase;
+font-family: 'Helvetica', sans-serif; 
+border-radius: 50px; 
+}
+
+.boton:hover{
+  font-size: large;
+}
+
+.integrante{
+  padding: 30px 0px;
+}
+
+.nombre-integrante{
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+  padding: 20px;
+}
+
+/*PROYECTO*/
+
