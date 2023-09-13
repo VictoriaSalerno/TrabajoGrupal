@@ -162,7 +162,7 @@ border-radius: 50px;
 
 }
 
-.proyecto-uno, .proyecto-dos, .proyecto-tres, .proyecto-cuatro{
+.proyecto-uno, .proyecto-dos, .proyecto-tres, .proyecto-cuatro, .proyecto-cinco{
   background-color:#4f5d98;
   padding: 50px;
   color: white;
@@ -187,4 +187,8 @@ border-radius: 50px;
   font-size: 20px;
   font-family: 'Righteous',sans-serif;
   padding: 20px;
+}
+
+.proyectos ul li {
+  margin: 8px;
 }
