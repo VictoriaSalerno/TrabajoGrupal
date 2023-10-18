@@ -143,9 +143,11 @@
 }
 
 .foto-integrante{
-  width: 15.6rem;
-  border-radius: 5rem;
-  border: 0.3rem solid #090935;
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.4rem solid rgb(63, 63, 109)
 }
 
 .boton{
@@ -160,7 +162,9 @@ border-radius: 3.1rem;
 }
 
 .boton:hover{
-  font-size: large;
+  font-size: 1.2rem;
+  box-shadow: 0 0 1rem rgb(157, 155, 155);
+
 }
 
 .integrante{
@@ -192,45 +196,72 @@ border-radius: 3.1rem;
     padding: 0.6rem;
   }
 }
-
 /*PROYECTO*/
 
-#proyecto{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/proyecto.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
+.proyectos{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sea.jpg");
   background-size: cover;
-  padding: 6.25rem;
-
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
-.proyecto-uno, .proyecto-dos, .proyecto-tres, .proyecto-cuatro, .proyecto-cinco{
-  background-color:#4f5d98;
-  padding: 3.1rem;
-  color: white;
-  margin: 3.1rem;
-  border-radius: 3%;
+.proyectos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
 }
 
-
-.titulo-proyecto{
-  font-size: 1.8rem;
-  font-family: 'Righteous', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  background-color:#4f5d98;
-  padding: 1.25rem;
-  border-radius: 5%;
+.proyectos-container .proyectos-caja {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    overflow: hidden;
+    max-width: 50rem;
+    height: 48rem;
 }
 
-.objetivo{
-  text-align: center;
-  font-size: 1.25rem;
-  font-family: 'Righteous',sans-serif;
-  padding: 1.25rem;
+.proyectos-caja img{
+    width: 100%;
+    transition: .5s ease;
+    
 }
 
-.proyectos ul li {
-  margin: 0.5rem;
+.proyectos-caja:hover img {
+    transform: scale(1.1);
 }
+
+.proyectos-caja .proyectos-contenido {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    opacity: 0;
+    transition: .5s ease;
+    color: #fff;
+}
+
+.proyectos-caja:hover .proyectos-contenido {
+    opacity: 1;
+}
+
+.proyectos-contenido h4 {
+    font-size: 2.4rem;
+    font-family: 'Righteous', 'sans serif';
+    padding-bottom: 0.5rem;
+}
+
+.proyectos-contenido p {
+    font-size: 1.7rem;
+    margin: .3rem 0 1rem;
+}
+
