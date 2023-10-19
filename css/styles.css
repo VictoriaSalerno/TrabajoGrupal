@@ -281,39 +281,42 @@ border-radius: 3.1rem;
 
 /*AVANCE*/
 .avance{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondo-integrantes.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/aquarium.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 3rem 3rem 10rem 3rem;
 }
+
 .contenedor-avance-titulo{
   text-align: center;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 1.8rem;
+  border-radius: 1.25rem;
   background-color: #4f5d98;
   color: #fff;
-  margin: 50px;
-  margin-top: 0px;
+  margin: 3rem;
 }
 
 .contenedor-avance-titulo h1 {
-  font-weight: 900;
+  font-family: 'Righteous', sans-serif;
+  font-size: 1.4rem;
 }
 
 .contenedor-avance-contenedores{
   text-align: center;
-  padding: 30px;
+  padding: 1.8rem;
   background-color: #4f5d98;
-  border-radius: 20px;
-  margin: 40px;
-  margin-bottom: 0px;
-
+  border-radius: 1.25rem;
+  margin: 4rem;
+  padding: 3.4rem;
 }
 
-.contenedor-avance-contenedores h3 {
+.contenedor-avance-contenedores h3, .contenedor-avance-contenedores p {
   color: #fff;
 }
 
-.contenedor-avance-contenedores p {
-  color: #fff;
+
+.titulo-avance{
+  font-family: 'Righteous', sans-serif;
+  padding: 0.8rem;
 }
