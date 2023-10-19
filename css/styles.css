@@ -258,7 +258,7 @@ border-radius: 3.1rem;
 }
 
 .proyectos-contenido p {
-  font-size: 1.rem;
+  font-size: 1rem;
   margin: 0.3rem 0 1rem;
 }
 
@@ -276,6 +276,12 @@ border-radius: 3.1rem;
 
   .proyectos-caja .proyectos-contenido {
     padding: 2rem;
+  }
+  .proyectos-contenido p, .proyectos-contenido h4 {
+    font-size: 1rem;
+  }
+  .proyectos-caja:focus .proyectos-contenido {
+    opacity: 1;
   }
 }
 
