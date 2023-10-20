@@ -9,71 +9,51 @@
   box-sizing: border-box;
 }
 
-.inicio{
-  background-color: #a22f31;
-  color: #fff;
-  padding: 1.25rem 1.25rem 0.93rem 1.25rem;
-  border-bottom: 0.25rem solid #2b2b4b; 
-  border-radius: 0; 
-}
-
-#nav-bar {
-  width: 100%;
-  display: flex;
-  list-style: none;
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  justify-content: center; 
-}
-
-.menu{
+nav {
+  margin: auto;
+  padding: 20px;
   display: flex;
   align-items: center;
-}
-
-.menu li {
-  padding-left: 30px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-  position: relative;
+  justify-content: space-between;
+  background-color: #a22f31;
   text-transform: uppercase;
 }
 
-.menu li a:hover{
-  font-size: 1.43rem;
-  color: black;
-  font-weight: 550;
+.logo {
+  width: 75px;
+  display: flex;
 }
 
-.logo{
-  width: 5rem;
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
 }
 
-@media (max-width: 767px) {
- 
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
 
-  .menu li {
-    padding: 0.62rem 0;
-  }
+nav ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #2b2b4b;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s ease-out;
+}
 
-  .menu li a {
-    font-size: 1rem;
-  }
+nav ul li:hover::before {
+  width: 100%;
+}
 
-  .logo {
-    display: block;
-    padding: 0.62rem;
-    margin: 2.81rem;
-    width: 6.25rem;
-  }
+nav .active {
+  color: #2b2b4b;
 }
 
 /*MAIN INICIO*/
@@ -284,6 +264,54 @@ border-radius: 3.1rem;
     opacity: 1;
   }
 }
+
+/*NAVBAR RESPONSIVE*/
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 750px){
+  .hamburger{
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background:#fefefe;
+      margin: 0.15rem 0;
+      border-radius: 80px;
+  }
+  nav ul {
+      position: absolute;
+      height: 0;
+      top: 4.25rem;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: rgba(22, 22, 22, 1);
+      transition: 0.5s;
+      overflow: hidden;
+  }
+  nav ul.active {
+      height: fit-content;
+  }
+
+  nav ul li {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      text-align: center;
+      transition: 0.65s;
+      opacity: 0;
+  }
+  nav ul li.active{
+      opacity: 1;
+  }
+}
+
 
 /*AVANCE*/
 .avance{
