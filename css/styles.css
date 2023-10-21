@@ -297,6 +297,7 @@ border-radius: 3.1rem;
   }
   nav ul.active {
       height: fit-content;
+      z-index: 1;
   }
 
   nav ul li {
