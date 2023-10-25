@@ -348,10 +348,35 @@ border-radius: 3.1rem;
 
 .contenedor-avance-contenedores h3, .contenedor-avance-contenedores p {
   color: #fff;
+  padding-top: 1rem;
 }
 
 
 .titulo-avance{
   font-family: 'Righteous', sans-serif;
-  padding: 0.8rem;
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.btn{
+background-color: #4CAF50;
+color: white;
+padding: 0.6rem 1.2rem; 
+text-align: center;
+text-decoration: none; 
+display: inline-block;
+font-size: 1rem; 
+margin: 0.2rem 0.1rem;
+cursor: pointer;
+border-radius: 0.3rem; 
+}
+
+.figma{
+  width: 21rem;
+}
+
+.btn:hover {
+  font-size: 1.2rem;
+  background-color: #45a049;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
