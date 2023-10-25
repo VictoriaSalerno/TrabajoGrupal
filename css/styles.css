@@ -375,8 +375,23 @@ border-radius: 0.3rem;
   width: 21rem;
 }
 
+
+
 .btn:hover {
-  font-size: 1.2rem;
   background-color: #45a049;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+
+  .figma {
+    width: 250px;
+  }  
+
+  .paleta {
+    width: 250px;
+  }
+
+  .tree{
+    display: none;
+  }
